@@ -1,0 +1,58 @@
+.campaign-container {
+  padding: 0% 15%;
+
+  .tab-container {
+    display: flex;
+    border-bottom: 1px solid #eee;
+
+    .tab-item {
+      min-width: 15%;
+      padding: 1%;
+      cursor: pointer;
+      a{
+        text-decoration: none;
+        color: #000000;
+        &.active {
+          color: #10a510 !important;
+        }
+      }
+
+      &.active {
+        color: #10a510 !important;
+        border-bottom: 3px solid #10a510;
+      }
+
+
+    }
+  }
+
+  .data-container {
+    margin-top: 2%;
+    border: 1px solid #eeeeee;
+    outline: 2px solid #f3f0f0;
+    min-height: 60vh;
+
+    .list-caption {
+      display: grid;
+      grid-template-columns: 20% 30% 20% 30%;
+      padding: 1%;
+      background: #eeeeee;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
+  img {
+    width: 25px;
+  }
+
+  .list-caption {
+    font-size: 15px;
+  }
+}

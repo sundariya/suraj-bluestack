@@ -1,0 +1,36 @@
+.header {
+  display: grid;
+  grid-template-columns: 50% 6% 10% 30%;
+  background-color: #222d48;
+  color: #ffffff;
+  min-height: 10vh;
+  text-align: center;
+  // padding: 0.5% 15% 0.5% 15%;
+
+  .logo {
+    width: 15%;
+  }
+
+  .pt-5 {
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    grid-template-columns: 1% 73% 25% 1%;
+    padding-top: 4%;
+    padding-left: 1%;
+
+    .logo {
+      width: 45%;
+    }
+
+    .pt-5 {
+      padding-top: 10%;
+    }
+    select {
+      color: #ffffff;
+    }
+  }
+}

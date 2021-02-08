@@ -1,0 +1,90 @@
+.list-row {
+  display: grid;
+  grid-template-columns: 1% 98% 1%;
+  min-height: 50px;
+
+  .list-data {
+    display: grid;
+    grid-template-columns: 20% 30% 20% 30%;
+    padding: 1%;
+    border-bottom: 1px solid #eeeeee;
+    p{
+      margin: 0px;
+    }
+    .campaign-name {
+      display: grid;
+      grid-template-columns: 15% 85%;
+      img {
+        width: 40px;
+        border-radius: 5px;
+      }
+
+    }
+
+    a {
+      cursor: pointer;
+      font-size: 12px;
+      margin-right: 5%;
+      position: relative;
+      color: #4d4ddc;
+      span {
+        position: relative;
+        top: -5px;
+        left: 5px;
+        width: 70px;
+      }
+      .img {
+        width: 20px;
+      }
+    }
+
+    button {
+      border: none;
+      width: 150px;
+      outline: none;
+    }
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+  .list-row {
+
+    .list-data {
+
+      p{
+        font-size: 11px;
+      }
+      small {
+        font-size: 8px;
+      }
+      .campaign-name {
+        grid-template-columns: 100%;
+        text-align: center;
+        img {
+          width: 25px;
+          border-radius: 2px;
+        }
+
+      }
+
+      a {
+        font-size: 10px;
+        margin-right: 2%;
+        position: relative;
+        span {
+        }
+        .img {
+          width: 20px;
+        }
+      }
+
+      button {
+        border: none;
+        width: 120px;
+        outline: none;
+      }
+    }
+
+  }
+}
